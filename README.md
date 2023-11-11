@@ -37,6 +37,12 @@ apt update && apt upgrade -y
 apt install git -y
 ```
 
+
+```bash
+apt-get install Python Python3 -y
+```
+
+
 ```bash
 git clone https://github.com/Dark-Legends/GUI-Random_Password.git && cd GUI-Random_Password
 ```
