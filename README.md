@@ -3,7 +3,8 @@ Graphical web ⚡ Random Password Generator
 
 <b><p align="center">Graphical User Interface web script To use On localhost Random Password Generator</p></b>
 
-<h2>This Tool Tested On 👨‍💻<\h2>
+<h2>This Tool Tested On 👨‍💻</h2>
+
 - ` Ubuntu `
 - ` Kali `
 - ` Debian `
@@ -47,5 +48,6 @@ git clone https://github.com/Dark-Legends/GUI-Random_Password.git && cd GUI-Rand
 
 <h3><b><i>📡 Connect with us :</i></b></h3>
 <h4>📢 Join Telegram for More Script and Tool for Free and OpenSource</h4>
+
 [![Telegram](https://img.shields.io/badge/Telegram-Channel-blue?style=flat-square&logo=telegram)](https://t.me/CyberDarkLegends)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/Dark-Legends)
