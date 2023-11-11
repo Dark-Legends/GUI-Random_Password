@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Custom properties */
+:root {
+  --cl-black: blue;
+  --cl-white: #ffffff;
+  --cl-accent: #13f0ae;
+  --fs-3xl: 5rem;
+  --fs-2xl: 3.2rem;
+  --fs-xl: 2.8rem;
+  --fs-lg: 2.2rem;
+  --fs-md: 1.8rem;
+  --fs-base: 1.6rem;
+  --fs-sm: 1.4rem;
+  --fs-xs: 1.2rem;
+  --font-family: 'Outfit', sans-serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--fs-base);
+  letter-spacing: normal;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%) translateY(-300%);
+  width: fit-content;
+  padding: 0.7rem 1.4rem;
+  background-color: var(--cl-black);
+  color: var(--cl-accent);
+  border: 1px solid var(--cl-accent);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  border-radius: 0.6rem;
+  transition: transform 400ms ease-in-out;
+}
+
+.alert span svg {
+  vertical-align: middle;
+}
+
+.alert.active {
+  transform: translateX(-50%) translateY(0);
+}
+
+.generator {
+  max-width: 80rem;
+  height: 100vh;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.generator-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+.generator-intro h2 {
+  font-size: clamp(var(--fs-2xl), 6vw, var(--fs-3xl));
+}
+.generator-intro h3 {
+  color: var(--cl-accent);
+  font-size: var(--fs-base);
+  text-transform: uppercase;
+}
+
+.generator-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.generator-box > * {
+  width: 100%;
+}
+
+.generated-password {
+  /* height: 10.5rem; */
+  padding: 2.2rem;
+  box-shadow: 0 0px 3px rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom: 2px solid var(--cl-accent);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.generated-password > input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--cl-black);
+  border: none;
+  outline: none;
+  color: var(--cl-white);
+  font-size: var(--fs-lg);
+}
+
+.generated-password button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.generated-password button svg {
+  color: var(--cl-white);
+  opacity: 0.7;
+  transition: all 300ms ease-in-out;
+}
+.generated-password button:hover svg {
+  opacity: 1;
+}
+
+.password-settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.2rem;
+  box-shadow: 0 0px 3px rgba(255, 255, 255, 0.1);
+  border-radius: 0.6rem;
+}
+
+.settings-panel {
+  display: flex;
+  gap: 2rem;
+}
+
+.settings-panel > div {
+  flex: 1;
+}
+.generator-intro {
+  
+  size: 50px;
+  
+   
+  
+  
+} 
+.password-lenght .slider {
+  margin: 0;
+  margin-top: 2rem;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20rem;
+  height: 0.4rem;
+  background-color: var(--cl-accent);
+  border-radius: 0.6rem;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--cl-accent);
+  
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--cl-black);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.checkbox label {
+  font-weight: 300;
+}
+
+footer {
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--cl-accent);
+  text-align: center;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+}

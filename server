@@ -1,0 +1,22 @@
+#!/bin/bash
+R="\033[1;31m"
+G="\033[1;32m"
+Y="\033[1;33m"
+PU="\033[1;34m"
+PI="\033[1;35m"
+B="\033[1;36m"
+W="\033[1;37m"
+clear
+for ((i=1; i<=5; i++)) do
+echo
+done
+# Start Python Server
+echo -e "\a${G}Starting Server...\n"
+sleep 1
+python3 -m http.server 8080 > /dev/null 2>&1 &
+link="http://localhost:8080"
+echo -e "${W}Your ${Y}Python server ${B}url ${PI}is${G} : $link\a\n\n"
+# Kill The Running Processes
+echo -e "\a${W}Press ${G}Enter To ${R}Exit"
+read -e
+killall -9 python3 > /dev/null 2>&1 &
