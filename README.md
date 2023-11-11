@@ -1,5 +1,4 @@
 <h1 align="center">GUI-Random_Password</h1>
-Graphical web ⚡ Random Password Generator
 
 <b><p align="center">Graphical User Interface web script To use On localhost Random Password Generator</p></b>
 
