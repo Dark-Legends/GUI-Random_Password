@@ -19,7 +19,7 @@ sudo apt-get install git -y
 ```
 
 ```bash
-sudo apt-get install Python Python3 -y
+sudo apt-get install Python3 -y
 ```
 
 ```bash
@@ -41,7 +41,7 @@ apt install git -y
 
 
 ```bash
-apt-get install Python Python3 -y
+apt-get install Python3 -y
 ```
 
 
